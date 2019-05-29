@@ -1,0 +1,46 @@
+$brand-primary: rgb(187, 223, 136);
+$brand-secundary: rgb(255, 82, 82);
+$background: rgb(33, 33, 33);
+$background-darker: darken($background, 10%);
+$font-size-base: 14px;
+$font-size-large: floor(($font-size-base * 2.6));
+$font-size-small: ceil(($font-size-base * 0.85));
+$font-color-base: rgb(255, 255, 255);
+$font-family: 'Avenir', Helvetica, Arial, sans-serif;
+$margin-base: 40px;
+$padding-base: 20px;
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-xl: 1600px;
+
+body, html { 
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	color: $font-color-base;
+	background-color: $background;
+	font-family: $font-family;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	vertical-align: top;
+	color: inherit;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+ @mixin transition($property) {
+	-webkit-transition: $property;
+	-moz-transition: $property;
+	-ms-transition: $property;
+	-o-transition: $property;
+	transition: $property;
+  }

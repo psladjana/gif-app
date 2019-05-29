@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifsList.vue matches snapshot 1`] = `<carousel-stub autoplay="true" autoplaytimeout="5000" autoplayhoverpause="true" autoplaydirection="forward" easing="ease" loop="true" minswipedistance="8" mousedrag="true" touchdrag="true" navigateto="0" navigationclicktargetsize="8" navigationenabled="true" navigationnextlabel="&amp;#9654" navigationprevlabel="&amp;#9664" paginationactivecolor="#000000" paginationcolor="#efefef" paginationpadding="10" paginationposition="bottom" paginationsize="10" perpage="2" perpagecustom="480,1,768,3,992,4" resistancecoef="20" scrollperpage="true" spacepadding="0" spacepaddingmaxoffsetfactor="0" speed="500" tagname="slide" maxpaginationdotcount="-1"></carousel-stub>`;
