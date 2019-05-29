@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="content">
+    <h1 class="content__heading">Tranding Gifs</h1>
+    <GifsList :gifs="gifs" :loading='loading' />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import { mapActions, mapGetters } from 'vuex';
+import GifsList from '@/components/GifsList.vue';
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    HelloWorld,
+    GifsList,
+  },
+  computed: {
+    ...mapGetters(['gifs', 'loading']),
+  },
+  methods: {
+    ...mapActions(['setGifs']),
+  },
+  mounted() {
+    this.setGifs();
   },
 };
 </script>

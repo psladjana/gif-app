@@ -2,13 +2,20 @@
 // http://nightwatchjs.org/guide#usage
 
 module.exports = {
-  'default e2e tests': (browser) => {
+  'List all Gifs on Homepage': (browser) => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
-      .waitForElementVisible('#app', 5000)
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
+      .waitForElementVisible('#app', 3000)
+      .assert.elementPresent('.content')
+      .assert.containsText('h1', 'Tranding Gifs')
+      .waitForElementVisible('.VueCarousel', 10000)
+      .assert.elementCount('.VueCarousel a', 16);
+  },
+  'Get a Gif Page': (browser) => {
+    browser
+      .click('.VueCarousel a')
+      .waitForElementVisible('.content', 15000)
+      .assert.elementPresent('img')
       .end();
   },
 };
