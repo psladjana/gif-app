@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # test-app
 
 ## Project setup
@@ -37,3 +38,6 @@ yarn run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# gif-app
+>>>>>>> bfebf2c3290b2a0e05032fc81fd8a013a6fba993
